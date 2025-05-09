@@ -4,7 +4,9 @@ const props = defineProps({
     member:Object
 })
 
-
+// ou directement une variable car ici 
+// nous ne sommes pas en asynchrone
+// il n'y aura donc jamais de maj de cette valeur
 const pictureUrlRiskyTest = ref(`url(src/assets/img/${props.member.profilePic})`)
 
 </script>
